@@ -23,8 +23,7 @@ public class Jyanken_Chapter28 {
 	//相手の手を乱数で選ぶ
 	public String getRandom() {
 		String[] hands = {"r", "s", "p"};
-		Random rand = new Random();
-		int index = rand.nextInt(hands.length);
+		int index = (int) Math.floor(Math.random() * hands.length);
 		return hands[index];
 	}
 	
